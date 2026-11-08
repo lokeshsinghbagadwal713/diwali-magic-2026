@@ -1,0 +1,174 @@
+.greeting-page {
+  min-height: 100vh;
+  padding: 55px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  color: #fff2d0;
+  background:
+    radial-gradient(circle at 50% 30%, #49245f 0%, transparent 48%),
+    linear-gradient(135deg, #10091f, #21102e, #090817);
+}
+
+.greeting-card {
+  width: 100%;
+  max-width: 570px;
+  padding: 45px 35px;
+  text-align: center;
+  border: 1px solid rgba(255, 210, 111, 0.6);
+  border-radius: 25px;
+  background: rgba(27, 16, 42, 0.92);
+  box-shadow: 0 0 60px rgba(255, 180, 60, 0.15);
+}
+
+.template-royal .greeting-card {
+  background: linear-gradient(145deg, #32153f, #140d25);
+}
+
+.template-traditional .greeting-card {
+  background: linear-gradient(145deg, #681d1b, #270c18);
+}
+
+.template-midnight .greeting-card {
+  background: linear-gradient(145deg, #101d45, #100d29);
+}
+
+.greeting-stars {
+  color: #ffd36f;
+  letter-spacing: 12px;
+  font-size: 20px;
+}
+
+.greeting-diya {
+  font-size: 55px;
+  margin: 18px 0;
+  filter: drop-shadow(0 0 15px #ffae37);
+}
+
+.greeting-eyebrow {
+  color: #e9bd75;
+  font-size: 11px;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+}
+
+.greeting-card h1 {
+  color: #ffd778;
+  font-family: Georgia, serif;
+  font-size: clamp(35px, 8vw, 56px);
+  margin: 10px 0 20px;
+}
+
+.greeting-recipient {
+  font-size: 20px;
+}
+
+.greeting-recipient strong,
+.greeting-sender strong {
+  color: #ffd778;
+}
+
+.greeting-photo {
+  width: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  border: 3px solid #e9bd75;
+  border-radius: 18px;
+  margin: 24px auto;
+  display: block;
+}
+
+.greeting-message {
+  color: #fff0d3;
+  font-size: 17px;
+  line-height: 1.9;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  margin: 25px 0;
+}
+
+.greeting-divider {
+  color: #ffd778;
+  font-size: 24px;
+  margin: 20px;
+}
+
+.greeting-sender {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.greeting-footer {
+  color: #d8bd9c;
+  font-size: 13px;
+  line-height: 1.7;
+  margin-top: 28px;
+}
+
+.greeting-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.greeting-actions button,
+.greeting-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 18px;
+  color: #24132a;
+  background: #ffd778;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.greeting-actions a {
+  color: #fff2d0;
+  background: transparent;
+  border: 1px solid rgba(255, 215, 120, 0.5);
+}
+
+.greeting-status {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 25px;
+  text-align: center;
+  color: #fff2d0;
+  background: #130c20;
+}
+
+.greeting-status a {
+  color: #ffd778;
+}
+
+@media (max-width: 600px) {
+  .greeting-card {
+    padding: 35px 20px;
+  }
+
+  .greeting-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .greeting-actions button,
+  .greeting-actions a {
+    width: 100%;
+    max-width: 320px;
+  }
+}

@@ -1,0 +1,135 @@
+
+.create-wish-page {
+  min-height: 100vh;
+  padding: 45px 20px 70px;
+  color: #fff8e9;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(130, 65, 145, 0.22), transparent 55%),
+    linear-gradient(135deg, #100817, #190d25 55%, #0b0815);
+}
+
+.editor-container {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 35px;
+  border: 1px solid rgba(238, 190, 91, 0.3);
+  border-radius: 22px;
+  background: rgba(35, 21, 43, 0.88);
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.35);
+}
+
+.editor-container > button:first-child {
+  padding: 9px 15px;
+  border: 1px solid rgba(239, 195, 105, 0.4);
+  border-radius: 9px;
+  color: #f4d38b;
+  background: transparent;
+  cursor: pointer;
+}
+
+.editor-container h1 {
+  margin: 25px 0 10px;
+  color: #f6d58d;
+  font-size: clamp(28px, 5vw, 38px);
+  text-align: center;
+}
+
+.editor-container > p {
+  margin-bottom: 30px;
+  color: #c9b9d1;
+  text-align: center;
+}
+
+.editor-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.editor-container label {
+  margin-top: 12px;
+  color: #f5d89e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.editor-container input:not([type="file"]),
+.editor-container textarea,
+.editor-container select {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid rgba(226, 190, 117, 0.3);
+  border-radius: 10px;
+  outline: none;
+  color: #fff;
+  background: #21172b;
+  font: inherit;
+}
+
+.editor-container input:focus,
+.editor-container textarea:focus,
+.editor-container select:focus {
+  border-color: #eac16e;
+  box-shadow: 0 0 0 3px rgba(234, 193, 110, 0.12);
+}
+
+.editor-container textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.editor-container input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px dashed #a98b5d;
+  border-radius: 10px;
+  color: #e8d9c2;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.editor-container small {
+  color: #bcaec7;
+  text-align: right;
+}
+
+.editor-container form button[type="submit"] {
+  margin-top: 20px;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  color: #26152a;
+  background: linear-gradient(110deg, #f5d58b, #dca849);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.editor-container form button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(225, 177, 82, 0.25);
+}
+
+.editor-container form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  padding: 12px;
+  border: 1px solid #b84b58;
+  border-radius: 8px;
+  color: #ffb6bd;
+  background: rgba(184, 75, 88, 0.12);
+}
+
+@media (max-width: 600px) {
+  .create-wish-page {
+    padding: 20px 12px 40px;
+  }
+
+  .editor-container {
+    padding: 22px 17px;
+  }
+}
